@@ -37,7 +37,7 @@ def draw_items(df):
             continue
         if pd.isna(item['img']):
             continue
-        with st.expander(f'{i}번 : {item['관광지명']}'):
+        with st.expander(f"{i}번 : {item['관광지명']}"):
             st.write(item['catch'])
             col1,col2 = st.columns([0.4,0.6])
             with col1:
