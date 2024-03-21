@@ -7,4 +7,5 @@ pandas
 folium
 streamlit-folium
 seaborn
+pinecone
 Pillow
