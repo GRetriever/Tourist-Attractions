@@ -60,7 +60,7 @@ def recommend(query,구분,지역):
 
 def draw_items(items):
     for i,item in enumerate(items):
-        with st.expander(f'{i+1}. {item['관광지명']}'):
+        with st.expander(f"{i+1}. {item['관광지명']}"):
             st.write(item['catch'])
             col1,col2 = st.columns([0.4,0.6])
             with col1:
