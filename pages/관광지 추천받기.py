@@ -7,6 +7,7 @@ from google.oauth2.service_account import Credentials
 from google.cloud import translate
 import pandas as pd
 import folium
+import base64
 
 openai_client = OpenAI(api_key = st.secrets['OPENAI_API_KEY'])
 pc = Pinecone(api_key = st.secrets['PINECONE_API_KEY'])
