@@ -23,7 +23,7 @@ credentials = Credentials.from_service_account_info(google_secret_json)
 google_translate_client = translate.TranslationServiceClient(credentials=credentials)
 
 def translation(query):
-    parent = f"projects/{google_secret['project_id']}/locations/global"
+    parent = f"projects/{google_secret_json['project_id']}/locations/global"
     response = google_translate_client.translate_text(
         request={
             "parent": parent,
