@@ -8,5 +8,4 @@ folium
 streamlit-folium
 seaborn
 pinecone-client
-google.oauth2.service_account
 Pillow
