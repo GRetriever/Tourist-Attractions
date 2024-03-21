@@ -1,2 +1,10 @@
-pillow
-openai
+streamlit==1.26.0
+openai==1.11.1
+numpy
+matplotlib
+requests
+pandas
+folium
+streamlit-folium
+seaborn
+Pillow
