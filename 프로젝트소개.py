@@ -1,7 +1,5 @@
 import streamlit as st
 import streamlit as st
-from tkinter.tix import COLUMN
-from pyparsing import empty
 
 st.title('🚄숨겨진 명소를 찾아서')
 st.write('AI를 이용하여 원하는 관광지 특성을 입력하여 숨겨진 명소를 추천 받아보세요!')
