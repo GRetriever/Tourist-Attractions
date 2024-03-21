@@ -15,8 +15,9 @@ index = pc.Index('touristattraction')
 
 # ========================================================
 
-with open("./data/google_secret.json") as fr:
-    google_secret = json.loads(fr.read())
+encoded_google_secret = st.secrets["GOOGLE_TRANSLATE_SECRET"]
+decoded_google_secret = base64.b64decode(encoded_google_secret).decode("utf-8")
+google_secret_json = json.loads(decoded_google_secret)
 
 credentials = Credentials.from_service_account_info(google_secret)
 google_translate_client = translate.TranslationServiceClient(credentials=credentials)
